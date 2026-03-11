@@ -3,114 +3,185 @@
 <html>
 <head>
 <title>KC Projects</title>
+
 <style>
+
 body{
 margin:0;
 font-family:Arial;
-background:#0a0f0a;
+background:#0b0b0b;
 color:white;
 }
 
-header{
-background:#111;
-padding:20px;
-text-align:center;
+.hero{
+background-image:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+background-size:cover;
+background-position:center;
+height:520px;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,0.45);
+}
+
+.logo{
+position:absolute;
+top:40px;
+left:40px;
+font-size:38px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
 .services{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-padding:40px;
+grid-template-columns:repeat(6,1fr);
+background:#0b0b0b;
 }
 
 .service{
-background:#111;
-border:1px solid #444;
-border-radius:10px;
-padding:20px;
 text-align:center;
+padding:30px 10px;
+border-right:1px solid #333;
+background:#111;
+}
+
+.service:last-child{
+border-right:none;
 }
 
 .service a{
-color:#d9b45a;
 text-decoration:none;
+color:#d6b35f;
 font-weight:bold;
+font-size:18px;
 }
 
-.section{
-padding:40px;
+.cards{
+display:grid;
+grid-template-columns:repeat(6,1fr);
 }
 
-.city{
-display:inline-block;
-margin:6px;
-padding:6px 10px;
-border:1px solid #555;
+.card{
+padding:20px;
+border-right:1px solid #333;
+border-top:1px solid #333;
+text-align:center;
+}
+
+.card:last-child{
+border-right:none;
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
 border-radius:6px;
-} </style>
+}
+
+.card h3{
+color:#d6b35f;
+margin:10px 0;
+}
+
+.card p{
+font-size:14px;
+color:#ccc;
+}
+
+.area{
+padding:40px;
+text-align:center;
+background:#0b0b0b;
+}
+
+.area span{
+display:inline-block;
+border:1px solid #444;
+padding:6px 10px;
+margin:4px;
+border-radius:6px;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header>
-<h1>KC Projects</h1>
-<p>Property Maintenance & Upgrades</p>
-</header>
+<div class="hero">
 
-<section class="services">
+<div class="overlay"></div>
 
-<div class="service">
+<div class="logo">KC PROJECTS</div>
+
+</div>
+
+<div class="services">
+
+<div class="service"><a href="junk.html">Junk Removal</a></div>
+<div class="service"><a href="pressure.html">Pressure Washing</a></div>
+<div class="service"><a href="garage.html">Garage Storage</a></div>
+<div class="service"><a href="landscaping.html">Landscaping</a></div>
+<div class="service"><a href="carpentry.html">Carpentry</a></div>
+<div class="service"><a href="snow.html">Snow Removal</a></div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
 <h3>Junk Removal</h3>
-<a href="junk.html">View Service</a>
+<p>Fast removal for unwanted items, dump runs and property cleanouts.</p>
 </div>
 
-<div class="service">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 <h3>Pressure Washing</h3>
-<a href="pressure.html">View Service</a>
+<p>Driveways, homes, rock walls, patios and exterior surfaces cleaned.</p>
 </div>
 
-<div class="service">
-<h3>Garage Storage Solutions</h3>
-<a href="garage.html">View Service</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582582494700-f8c0b1c8f8a2">
+<h3>Garage Storage</h3>
+<p>Shelving installs, layout improvements and garage organization.</p>
 </div>
 
-<div class="service">
-<h3>Landscaping & Yard Care</h3>
-<a href="landscape.html">View Service</a>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598908314732-07113901949e">
+<h3>Landscaping</h3>
+<p>Cleanups, edging, mulch, planting and yard care.</p>
 </div>
 
-<div class="service">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 <h3>Carpentry</h3>
-<a href="carpentry.html">View Service</a>
+<p>Decks, fences, gates and outdoor carpentry improvements.</p>
 </div>
 
-<div class="service">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325">
 <h3>Snow Removal</h3>
-<a href="snow.html">View Service</a>
+<p>Reliable winter clearing for driveways and walkways.</p>
 </div>
 
-</section>
+</div>
 
-<section class="section">
+<div class="area">
 
-<h2>Areas Served</h2>
+<h2>Serving Lower Mainland & Fraser Valley</h2>
 
-<div class="city">Mission</div>
-<div class="city">Chilliwack</div>
-<div class="city">Abbotsford</div>
-<div class="city">Aldergrove</div>
-<div class="city">Langley</div>
-<div class="city">Surrey</div>
-<div class="city">White Rock</div>
-<div class="city">Maple Ridge</div>
-<div class="city">Port Coquitlam</div>
-<div class="city">Burnaby</div>
-<div class="city">Vancouver</div>
-<div class="city">North Vancouver</div>
+<span>Mission</span> <span>Chilliwack</span> <span>Abbotsford</span> <span>Aldergrove</span> <span>Langley</span> <span>Surrey</span> <span>White Rock</span> <span>Maple Ridge</span> <span>Port Coquitlam</span> <span>Burnaby</span> <span>Vancouver</span> <span>North Vancouver</span>
 
-</section>
+</div>
 
 </body>
 </html>
