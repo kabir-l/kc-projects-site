@@ -9,7 +9,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0b0b0b;
+background:#0a0a0a;
 color:white;
 }
 
@@ -21,46 +21,26 @@ height:520px;
 position:relative;
 }
 
-.overlay{
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:rgba(0,0,0,0.45);
-}
-
-.logo{
+.hero h1{
 position:absolute;
 top:40px;
 left:40px;
-font-size:38px;
-font-weight:bold;
+font-size:40px;
 letter-spacing:2px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(6,1fr);
-background:#0b0b0b;
-}
-
-.service{
-text-align:center;
-padding:30px 10px;
-border-right:1px solid #333;
 background:#111;
 }
 
-.service:last-child{
-border-right:none;
-}
-
-.service a{
-text-decoration:none;
+.service-title{
+text-align:center;
+padding:18px;
 color:#d6b35f;
+border-right:1px solid #333;
 font-weight:bold;
-font-size:18px;
 }
 
 .cards{
@@ -69,19 +49,15 @@ grid-template-columns:repeat(6,1fr);
 }
 
 .card{
-padding:20px;
+text-align:center;
 border-right:1px solid #333;
 border-top:1px solid #333;
-text-align:center;
-}
-
-.card:last-child{
-border-right:none;
+padding:20px;
 }
 
 .card img{
 width:100%;
-height:160px;
+height:150px;
 object-fit:cover;
 border-radius:6px;
 }
@@ -92,14 +68,13 @@ margin:10px 0;
 }
 
 .card p{
-font-size:14px;
+font-size:13px;
 color:#ccc;
 }
 
 .area{
 padding:40px;
 text-align:center;
-background:#0b0b0b;
 }
 
 .area span{
@@ -117,40 +92,36 @@ border-radius:6px;
 <body>
 
 <div class="hero">
-
-<div class="overlay"></div>
-
-<div class="logo">KC PROJECTS</div>
-
+<h1>KC PROJECTS</h1>
 </div>
 
 <div class="services">
 
-<div class="service"><a href="junk.html">Junk Removal</a></div>
-<div class="service"><a href="pressure.html">Pressure Washing</a></div>
-<div class="service"><a href="garage.html">Garage Storage</a></div>
-<div class="service"><a href="landscaping.html">Landscaping</a></div>
-<div class="service"><a href="carpentry.html">Carpentry</a></div>
-<div class="service"><a href="snow.html">Snow Removal</a></div>
+<div class="service-title">Junk Removal</div>
+<div class="service-title">Pressure Washing</div>
+<div class="service-title">Garage Storage Solutions</div>
+<div class="service-title">Landscaping & Yard Care</div>
+<div class="service-title">Carpentry</div>
+<div class="service-title">Snow Removal</div>
 
 </div>
 
 <div class="cards">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba">
 <h3>Junk Removal</h3>
 <p>Fast removal for unwanted items, dump runs and property cleanouts.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
 <h3>Pressure Washing</h3>
 <p>Driveways, homes, rock walls, patios and exterior surfaces cleaned.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1582582494700-f8c0b1c8f8a2">
+<img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea">
 <h3>Garage Storage</h3>
 <p>Shelving installs, layout improvements and garage organization.</p>
 </div>
