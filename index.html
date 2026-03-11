@@ -1,156 +1,123 @@
 <!DOCTYPE html>
-
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KC Projects</title>
 
 <style>
-
 body{
 margin:0;
+background:#050505;
 font-family:Arial;
-background:#0a0a0a;
 color:white;
 }
 
-.hero{
-background-image:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
-background-size:cover;
-background-position:center;
-height:520px;
+.wrap{
+width:100%;
+max-width:1600px;
+margin:auto;
 position:relative;
 }
 
-.hero h1{
-position:absolute;
-top:40px;
-left:40px;
-font-size:40px;
-letter-spacing:2px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(6,1fr);
-background:#111;
-}
-
-.service-title{
-text-align:center;
-padding:18px;
-color:#d6b35f;
-border-right:1px solid #333;
-font-weight:bold;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(6,1fr);
-}
-
-.card{
-text-align:center;
-border-right:1px solid #333;
-border-top:1px solid #333;
-padding:20px;
-}
-
-.card img{
+.hero-img{
 width:100%;
-height:150px;
-object-fit:cover;
-border-radius:6px;
+display:block;
 }
 
-.card h3{
-color:#d6b35f;
-margin:10px 0;
+.click{
+position:absolute;
+display:block;
 }
 
-.card p{
-font-size:13px;
-color:#ccc;
-}
+/* top menu areas */
+.junk1{left:83.5%;top:49.5%;width:14.5%;height:7%;}
+.pressure1{left:3%;top:49.5%;width:15.5%;height:7%;}
+.garage1{left:35.5%;top:49.5%;width:16%;height:7%;}
+.land1{left:19.5%;top:49.5%;width:15.5%;height:7%;}
+.carp1{left:52.5%;top:49.5%;width:15.5%;height:7%;}
+.snow1{left:68.5%;top:49.5%;width:15%;height:7%;}
 
-.area{
+/* card areas */
+.junk2{left:83.5%;top:56.7%;width:14.5%;height:34.5%;}
+.pressure2{left:3%;top:56.7%;width:15.5%;height:34.5%;}
+.garage2{left:35.5%;top:56.7%;width:16%;height:34.5%;}
+.land2{left:19.5%;top:56.7%;width:15.5%;height:34.5%;}
+.carp2{left:52.5%;top:56.7%;width:15.5%;height:34.5%;}
+.snow2{left:68.5%;top:56.7%;width:15%;height:34.5%;}
+
+.section{
+background:#0b0b0b;
 padding:40px;
 text-align:center;
 }
 
-.area span{
+.section h2{
+color:#d4af37;
+}
+
+.city{
 display:inline-block;
 border:1px solid #444;
-padding:6px 10px;
-margin:4px;
+padding:8px 12px;
+margin:5px;
 border-radius:6px;
 }
 
+.call{
+background:#d4af37;
+color:black;
+padding:14px 22px;
+display:inline-block;
+margin-top:20px;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+}
 </style>
-
 </head>
 
 <body>
 
-<div class="hero">
-<h1>KC PROJECTS</h1>
-</div>
+<div class="wrap">
 
-<div class="services">
+<img src="home-mockup.png" class="hero-img" alt="KC Projects homepage mockup">
 
-<div class="service-title">Junk Removal</div>
-<div class="service-title">Pressure Washing</div>
-<div class="service-title">Garage Storage Solutions</div>
-<div class="service-title">Landscaping & Yard Care</div>
-<div class="service-title">Carpentry</div>
-<div class="service-title">Snow Removal</div>
+<a href="pressure.html" class="click pressure1"></a>
+<a href="landscaping.html" class="click land1"></a>
+<a href="garage.html" class="click garage1"></a>
+<a href="carpentry.html" class="click carp1"></a>
+<a href="snow.html" class="click snow1"></a>
+<a href="junk.html" class="click junk1"></a>
 
-</div>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba">
-<h3>Junk Removal</h3>
-<p>Fast removal for unwanted items, dump runs and property cleanouts.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
-<h3>Pressure Washing</h3>
-<p>Driveways, homes, rock walls, patios and exterior surfaces cleaned.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea">
-<h3>Garage Storage</h3>
-<p>Shelving installs, layout improvements and garage organization.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1598908314732-07113901949e">
-<h3>Landscaping</h3>
-<p>Cleanups, edging, mulch, planting and yard care.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-<h3>Carpentry</h3>
-<p>Decks, fences, gates and outdoor carpentry improvements.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325">
-<h3>Snow Removal</h3>
-<p>Reliable winter clearing for driveways and walkways.</p>
-</div>
+<a href="pressure.html" class="click pressure2"></a>
+<a href="landscaping.html" class="click land2"></a>
+<a href="garage.html" class="click garage2"></a>
+<a href="carpentry.html" class="click carp2"></a>
+<a href="snow.html" class="click snow2"></a>
+<a href="junk.html" class="click junk2"></a>
 
 </div>
 
-<div class="area">
+<div class="section">
 
 <h2>Serving Lower Mainland & Fraser Valley</h2>
 
-<span>Mission</span> <span>Chilliwack</span> <span>Abbotsford</span> <span>Aldergrove</span> <span>Langley</span> <span>Surrey</span> <span>White Rock</span> <span>Maple Ridge</span> <span>Port Coquitlam</span> <span>Burnaby</span> <span>Vancouver</span> <span>North Vancouver</span>
+<div class="city">Mission</div>
+<div class="city">Chilliwack</div>
+<div class="city">Abbotsford</div>
+<div class="city">Aldergrove</div>
+<div class="city">Langley</div>
+<div class="city">Surrey</div>
+<div class="city">White Rock</div>
+<div class="city">Maple Ridge</div>
+<div class="city">Port Coquitlam</div>
+<div class="city">Burnaby</div>
+<div class="city">Vancouver</div>
+<div class="city">North Vancouver</div>
+
+<br>
+
+<a class="call" href="tel:7782412265">Call 778-241-2265</a>
 
 </div>
 
